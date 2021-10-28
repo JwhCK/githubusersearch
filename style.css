@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #141D2F;
+    font-family: "Space Mono", sans-serif;
+    color: #FFFFFF;
+}
+.top-text{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+/* Search container */
+
+.search-con{
+    background-color: #1E2A47;
+    margin: 3em 3em 0em 1em 0em;
+    padding: 1.5em;
+    border-radius:1rem;
+    min-height: 2em;
+}
+.search-data{
+    color: white;
+    background-color: transparent;
+    border: none;
+    
+}
