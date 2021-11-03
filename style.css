@@ -1,24 +1,45 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 body{
+    height: 100vh;
+    width:100vw; 
     margin:0;
-    display: flex;
     flex-direction: column;
     background-color: #141D2F;
     font-family: "Space Mono", sans-serif;
     color: #FFFFFF;
 }
+
+.body-con{
+    height: 90vh;
+    width:100vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
 .top-text{
     font-size: 0.6em;
+    width: 100vw;
     display: flex;
+    align-items: center;
     letter-spacing: 5px;
     color: white;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    margin: 2em 2em;
+    margin-top: 20px;
+    padding: 0px 15px 0px 15px;
+    
+}
+.app-tittle{
+    font-size: 26px;
+}
+.color-mode{
+    font-size: 13px;
 }
 
 /* Search container */
@@ -29,11 +50,11 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: #1E2A47;
-    margin:0.5em 0 0.5em 2em;
     padding: 0.5em;
     border-radius:1rem;
     min-height: 2em;
-    max-width: 327px;
+    min-width: 327px;
+    margin-bottom: 15px;
 }
 .search-data{
     padding:1em;
@@ -70,13 +91,12 @@ input::placeholder{
 
 .main-container{
     background-color: #1E2A47;
-    margin: 0.5em 2em;
+    margin-top: -30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 517px;
-    min-width: 327px;
+    
     
 
 }
@@ -87,6 +107,7 @@ display: flex;
 flex-direction: row;
 margin-right: 5em;
 margin-top: 2em;
+margin-bottom: 20px;
 
 
 }
@@ -109,7 +130,7 @@ margin-top: 2em;
 .date-joined{
     font-size: 13px;
     font-weight: lighter;
-    min-width: 150px;
+    min-width: 120px;
 }
 .username-link{
     font-size: 13px;
@@ -121,7 +142,7 @@ margin-top: 2em;
 
 /* user bio description */
 .user-bio{
-    margin: 1em 1em 1em 2em;
+    margin: 1em 1em 2em 2em;
     font-size: 13px;
     font-weight: 10;
     max-width: 279px;
@@ -137,7 +158,7 @@ margin-top: 2em;
     min-height: 85px;
     background-color: #141D2F;
     margin: 0.5em;
-    padding: 2em 1em ;
+    padding: 2em 4em ;
     border-radius: 10px;
     
 }
@@ -160,6 +181,7 @@ font-weight: bold;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 0.5em;
+    margin-top: 20px;
 
 }
 
@@ -177,3 +199,18 @@ font-weight: bold;
 .contact-link-icon{
     font-size: 13px;
 }
+/* MOBILE RESPONSIVE */
+@media only screen and (max-width: 500px) {
+
+
+.main-container{
+    max-width: 327px;
+    min-height: 517px;
+     }
+ 
+
+
+     
+ }
+
+
